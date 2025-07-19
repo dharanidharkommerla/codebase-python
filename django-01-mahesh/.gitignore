@@ -1,0 +1,30 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# SQLite database
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+venv*/
+env*/
+
+# VSCode/IDE configs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# System-specific files
+.DS_Store
+Thumbs.db
