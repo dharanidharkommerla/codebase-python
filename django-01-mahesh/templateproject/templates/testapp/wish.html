@@ -12,14 +12,35 @@
         border: 1px solid red;
         border-radius: 20px;
         font-family: "Times New Roman", Times, serif;
+        color: white;
         background: linear-gradient(45deg, pink, blueviolet);
+      }
+      table {
+        border: 1px solid red;
       }
     </style>
   </head>
   <body>
     <div id="wish">
-      <h1>Welcome to Django Templates Project</h1>
-      <h2>In MVT Architecture, Second hero is <strong>Templates</strong></h2>
+      <h2>Welcome to Django Templates Project</h2>
+      <p>In MVT Architecture, Second hero is <strong>Templates</strong></p>
+      <p>{{msg}}</p>
+      <p>Time is : {{fulldatetime}}</p>
+      <h3>Student Details</h3>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>{{name}}</td>
+        </tr>
+        <tr>
+          <td>RollNo</td>
+          <td>{{rollno}}</td>
+        </tr>
+        <tr>
+          <td>Marks</td>
+          <td>{{marks}}</td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
