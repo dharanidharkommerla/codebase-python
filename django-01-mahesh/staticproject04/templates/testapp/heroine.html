@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroine</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" />
+  </head>
+  <body>
+    <h1>Welcom</h1>
+    <h2>This is {{name}} Page</h2>
+    <div>
+      {% if name == "pooja" %}
+      <img src="{%static 'images/pooja/pooja-1.jpg'%}" alt="" />
+      <img src="{%static 'images/pooja/pooja-2.jpg'%}" alt="" />
+      <img src="{%static 'images/pooja/pooja-3.jpg'%}" alt="" />
+      {% elif name == "samantha" %}
+      <img src="{%static 'images/samantha/samantha-1.jpg'%}" alt="" />
+      <img src="{%static 'images/samantha/samantha-2.jpg'%}" alt="" />
+      <img src="{%static 'images/samantha/samantha-3.jpg'%}" alt="" />
+      {% elif name == "tamanna" %}
+      <img src="{%static 'images/tamanna/tamanna-1.jpg'%}" alt="" />
+      <img src="{%static 'images/tamanna/tamanna-2.jpg'%}" alt="" />
+      {% endif %}
+    </div>
+    <div>Completed</div>
+  </body>
+</html>
