@@ -23,6 +23,7 @@ def populate(n):
         fSMobileNo = mobileNumberGenerator()
         fSMarks = fake.random_int(min=0, max=100)
         fSAddress = fake.address()
+        # insert the data into the table --> below line
         Student.objects.get_or_create(sId=fSId, sName=fSName, sEmail=fSEmail, sMobileNo=fSMobileNo,sMarks=fSMarks,sAddress=fSAddress)
 
 

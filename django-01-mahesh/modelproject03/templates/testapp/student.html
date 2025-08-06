@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Details</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <!-- 🟢 Moved outside the grid -->
+    <div id="root">
+      {% if student_list %} {% for student in student_list %}
+      <div class="student">
+        <p>Student RollNo: {{ student.sId }}</p>
+        <p>Student Name: {{ student.sName }}</p>
+        <p>Student Email: {{ student.sEmail }}</p>
+        <p>Student Mobile Number: {{ student.sMobileNo }}</p>
+        <p>Student Marks: {{ student.sMarks }}</p>
+        <p>Student Address: {{ student.sAddress }}</p>
+      </div>
+      {% endfor %} {% else %}
+      <p>No Records found</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
