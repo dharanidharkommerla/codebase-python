@@ -2,6 +2,7 @@ from django.shortcuts import render
 import datetime
 import random
 # Create your views here.
+
 def result_view(request):
     time = datetime.datetime.now()
     names_list = ['sunny','katrina','kareena','deepika','mallika','alia']
